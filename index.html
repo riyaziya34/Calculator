@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input id="display" readonly>
+        <div class="keys">
+            <button onclick="clearDisplay()" class="fxn_keys">AC</button>
+            <button onclick="BackSpace()" class="fxn_keys">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="50px" height="50px" viewBox="0 0 256 256" id="Flat">
+  <path d="M216,35.99963H68.5293a20.097,20.097,0,0,0-17.14942,9.71094L5.71,121.8258a11.99886,11.99886,0,0,0,0,12.34766l45.66992,76.11621a20.09857,20.09857,0,0,0,17.14942,9.71H216a20.02229,20.02229,0,0,0,20-20v-144A20.02229,20.02229,0,0,0,216,35.99963Zm-4,160H70.79492l-40.80078-68,40.80078-68H212ZM103.51465,143.51428l15.51465-15.51465L103.51465,112.485a12.0001,12.0001,0,0,1,16.9707-16.9707L136,111.02893l15.51465-15.51465a12.0001,12.0001,0,0,1,16.9707,16.9707L152.9707,127.99963l15.51465,15.51465a12.0001,12.0001,0,0,1-16.9707,16.9707L136,144.97034,120.48535,160.485a12.0001,12.0001,0,1,1-16.9707-16.9707Z"/>
+</svg>
+            </button>
+            <button onclick="appendToDisplay('%')" class="fxn_keys">%</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" class="multiply" class="operator">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('_')">_</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="operator">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
